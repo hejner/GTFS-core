@@ -1,5 +1,4 @@
-﻿using GeoAPI.Geometries;
-using GTFS.Tool.Switches.Processors;
+﻿using GTFS.Tool.Switches.Processors;
 using NetTopologySuite.Features;
 using NetTopologySuite.Geometries;
 using NetTopologySuite.IO;
@@ -69,7 +68,7 @@ namespace GTFS.Tool.Switches
 
                 var featureCollection = geoJsonReader.Read<FeatureCollection>(geoJson) as FeatureCollection;
 
-                foreach (var feature in featureCollection.Features)
+                foreach (var feature in featureCollection)
                 {
                     return new ProcessorFeedFilter()
                     { // create a bounding box filter.
