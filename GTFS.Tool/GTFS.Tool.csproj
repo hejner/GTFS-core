@@ -21,7 +21,6 @@
   <ItemGroup>
     <ProjectReference Include="..\GTFS\GTFS.csproj" />
     <ProjectReference Include="..\GTFS.IO\GTFS.IO.csproj" />
-    <ProjectReference Include="..\GTFS.IO.Desktop\GTFS.IO.Desktop.csproj" />
   </ItemGroup>
 
 </Project>
